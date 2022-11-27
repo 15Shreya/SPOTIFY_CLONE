@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+display: flex;
+align-items: center;
+list-style-type: none;
+background-color: black;
+color: white;
+height: 45px;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+
+.logo img{
+    width: 39px;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 24px;
+    background-image: url('image/bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    color: white;
+    height: 85px;
+    /* bottom: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#masterPlay{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.icons{
+    margin-top: 10px;
+}
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 20px;
+}
+
+.songItem{
+    height: 25px;
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    width: 60%;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 20px;
+    height: 20px;
+    margin: 0 23px;
+    border-radius: 80px;
+}
+
+.timeStamp{
+    margin: 0 23px;
+}
+.timeStamp i{
+    cursor: pointer;
+}
+.songInfo{
+    margin-top: 16px;
+    position: absolute;
+    left: 10vw;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    width: 70px;
+}
